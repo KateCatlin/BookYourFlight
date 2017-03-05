@@ -41,7 +41,7 @@ public class QuizActivity extends AppCompatActivity {
                         R.string.correct_toast,
                         Toast.LENGTH_SHORT).show();
             }
-        };
+        });
     }
 
 }
