@@ -6,12 +6,11 @@ package com.example.katecatlin.geoquiz;
 
 public class TrueFalse {
     private int Question;
-
     private boolean TrueQuestion;
 
     public TrueFalse(int question, boolean trueQuestion) {
         Question = question;
-        trueQuestion = trueQuestion;
+        TrueQuestion = trueQuestion;
     }
 
 

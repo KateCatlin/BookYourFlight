@@ -3,6 +3,7 @@ package com.example.katecatlin.geoquiz;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
 public class QuizActivity extends AppCompatActivity {
+    private static final String TAG = "QuizActivity";
 
     private Button TrueButton;
     private Button FalseButton;
@@ -26,6 +28,7 @@ public class QuizActivity extends AppCompatActivity {
             new TrueFalse(R.string.question_weather, false),
             new TrueFalse(R.string.question_free, true),
             new TrueFalse(R.string.question_flights, true),
+            new TrueFalse(R.string.question_flights, true),
     };
 
     private int CurrentIndex = 0;
@@ -36,14 +39,15 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void checkAnswer(boolean userPressedTrue) {
+
         boolean answerIsTrue = QuestionBank[CurrentIndex].isTrueQuestion();
 
         int messageResId = 0;
 
         if (userPressedTrue == answerIsTrue) {
-            messageResId = R.string.correct_toast;
+            Log.d(TAG, "answerIsTrue is registered as true");
         } else {
-            messageResId = R.string.incorrect_toast;
+            Log.d(TAG, "answerIsTrue is registered as false");
         }
 
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
