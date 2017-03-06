@@ -5,7 +5,7 @@
     <string name="false_button">False</string>
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
-    <string name="next_button">Next Question...</string>
+    <string name="next_button">Next Question</string>
 
     <string name="question_GCC"> Go Code CO is going to be mega-fun </string>
     <string name="question_weather">Detroit is warmer than Denver right now</string>

@@ -1,5 +1,6 @@
 package com.example.katecatlin.geoquiz;
 
+import android.media.Image;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +22,8 @@ public class QuizActivity extends AppCompatActivity {
 
     private Button TrueButton;
     private Button FalseButton;
-    private Button NextButton;
+    private ImageButton NextButton;
+    private ImageButton PreviousButton;
     private TextView QuestionTextView;
 
     private TrueFalse[] QuestionBank = new TrueFalse[]{
@@ -45,9 +48,9 @@ public class QuizActivity extends AppCompatActivity {
         int messageResId = 0;
 
         if (userPressedTrue == answerIsTrue) {
-            Log.d(TAG, "answerIsTrue is registered as true");
+            messageResId = R.string.correct_toast;
         } else {
-            Log.d(TAG, "answerIsTrue is registered as false");
+            messageResId = R.string.incorrect_toast;
         }
 
         Toast.makeText(this, messageResId, Toast.LENGTH_SHORT).show();
@@ -76,7 +79,7 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        NextButton = (Button)findViewById(R.id.next_button);
+        NextButton = (ImageButton)findViewById(R.id.next_button);
         NextButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
