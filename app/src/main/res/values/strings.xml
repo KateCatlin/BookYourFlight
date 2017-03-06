@@ -7,7 +7,8 @@
     <string name="incorrect_toast">Incorrect!</string>
     <string name="next_button">Next Question...</string>
 
-    <string name="question_oceans">The Pac Ocean is larger than Atlantic </string>
-    <string name="question_mideast">The Suez Canal connects the Red Sea and Indian Ocean</string>
-    <string name="question_africa">The source of the Nile is in Egypt</string>
+    <string name="question_GCC"> Go Code CO is going to be mega-fun </string>
+    <string name="question_weather">Detroit is warmer than Denver right now</string>
+    <string name="question_free">You have a free place to stay in Boulder</string>
+    <string name="question_flights">Stuart and R should book flights!</string>
 </resources>

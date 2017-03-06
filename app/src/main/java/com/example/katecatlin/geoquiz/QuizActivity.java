@@ -22,9 +22,10 @@ public class QuizActivity extends AppCompatActivity {
     private TextView QuestionTextView;
 
     private TrueFalse[] QuestionBank = new TrueFalse[]{
-            new TrueFalse(R.string.question_oceans, true),
-            new TrueFalse(R.string.question_mideast, false),
-            new TrueFalse(R.string.question_africa, false),
+            new TrueFalse(R.string.question_GCC, true),
+            new TrueFalse(R.string.question_weather, false),
+            new TrueFalse(R.string.question_free, true),
+            new TrueFalse(R.string.question_flights, true),
     };
 
     private int CurrentIndex = 0;
