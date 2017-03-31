@@ -43,7 +43,7 @@ public class QuizActivity extends AppCompatActivity {
     private void checkAnswer(boolean userPressedTrue) {
         boolean answerIsTrue = QuestionBank[CurrentIndex].isTrueQuestion();
         int messageResId = 0;
-        
+
         if (mIsWeak) {
             messageResId = R.string.judgement_toast;
         } else {
