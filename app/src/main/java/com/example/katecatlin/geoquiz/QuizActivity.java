@@ -31,7 +31,6 @@ public class QuizActivity extends AppCompatActivity {
             new TrueFalse(R.string.question_weather, false),
             new TrueFalse(R.string.question_free, true),
             new TrueFalse(R.string.question_flights, true),
-            new TrueFalse(R.string.question_flights, true),
     };
 
     private int CurrentIndex = 0;
