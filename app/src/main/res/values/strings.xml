@@ -9,6 +9,7 @@
     <string name="warning_text">Warning: You may not be able to resist moving here.</string>
     <string name="show_pic_button">Show Pic</string>
     <string name="motivate_button">Need more motivation?</string>
+    <string name="judgement_toast">Dude you\'re so weak.</string>
 
     <string name="question_GCC"> Go Code CO is going to be mega-fun </string>
     <string name="question_weather">Detroit is warmer than Denver right now</string>
